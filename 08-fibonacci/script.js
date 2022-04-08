@@ -10,10 +10,8 @@
 
 function fibonacci(n) {
     if (!Number.isInteger(n)) return 'Передайте число';
-    if (n === 0) {
+    if (n === 0 || n === 1) {
         return 0;
-    } else if (n === 1) {
-        return 1;
     } else if (n === 2) {
         return 1;
     } else {
@@ -24,3 +22,4 @@ function fibonacci(n) {
 // Протестируйте решение, вызывая функцию с разными аргументами:
 
 console.log(fibonacci(4)); // 2. Четвёртое число последовательности — двойка (0, 1, 1, 2)
+console.log(fibonacci(1)); 
